@@ -8,14 +8,14 @@
     if(!strs.length){
         return null
     }
-    for (let i = 0; i < strs.length; i++) {
-        for (let j = 1; j < strs.length; j++) {
-            if(strs[j][i]!=strs[0][i]) return result;
-            result += strs[0][i]
-        }
-        
+    if(strs.length == 1){
+        return strs[0]
     }
-    
-};
+    strs.sort()
+    console.log(strs,'排序之后的strs');
+    for (let index = 0; index < strs.length; index++) {
 
-console.log('longestCommonPrefix',longestCommonPrefix(["flower","flow","flight"]))
+    }
+};
+longestCommonPrefix(["flower","flow","flight"])
+console.log('longestCommonPrefix',longestCommonPrefix(["assssssllll","eererersdfdsfg","adfdgfd"]))
